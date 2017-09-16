@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/fdb-all.min.js"></script>
+	<title></title>
+</head>
+<body>
+<h1>過往支出查詢</h1>
+<div class="radio">
+
+<label><input type="radio" name="method" value="curmonth" >本月份<br></label>
+<label><input type="radio" name="method" value="time" >指定期間<br></label>
+</div>
+<input type="date" name="" id="fromtime">-<input type="date" name="" id="totime"><br>
+<button type="button" class="btn btn-success" id="lookup">search</button>
+
+<table class="table">
+<thead>
+
+<th>Category</th>
+<th>money</th>	
+<th>porpotion</th>
+</thead>	
+<tbody id=CountingTable>
+<tr>
+<td>食</td>
+<td id = "eatCost">0</td>
+<td id = "eatproportion">0%</td>
+</tr>
+<tr>
+<td>衣</td>
+<td  id = "wearCost">0</td>
+<td id = "wearproportion">0%</td>
+</tr>
+<tr>
+<td >住</td>
+<td  id = "liveCost" >0</td>
+<td id = "liveproportion">0%</td>
+</tr>
+<tr>
+<td>行</td>
+<td id = "transCost">0</td>
+<td id = "transproportion" >0%</td>
+</tr>
+<tr>
+<td>樂</td>
+<td id = "playCost">0</td>
+<td id = "teachproportion">0%</td>
+</tr>
+<tr>
+<td>育</td>
+<td id = "teachCost">0</td>
+<td id = "playproportion">0%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td id = "otherCost" >0</td>
+<td id = "otherproportion">0%</td>
+</tr>
+<tr>
+<td>總計</td>
+<td id = "totalCost">0</td>
+<td id = "totalproportion">100%</td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="table">
+<thead>
+<th>date</th>
+<th>Category</th>
+<th>Project</th>	
+<th>Money</th>
+</thead>	
+<tbody id=accountingTable>
+</tbody>
+</table>
+<script type="text/javascript" src="js/lookup.js"></script>
+</body>
+</html>

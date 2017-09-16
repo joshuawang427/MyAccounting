@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/fdb-all.min.js"></script>
+	<title></title>
+</head>
+<body>
+<h1>新增支出</h1>
+<div class="form-group">
+  <label for="Date">日期:</label>
+  <input type="date" class="form-control" id="date">
+  <label for="Category">類別:</label>
+  <select class="form-control" id="Category">
+  	<option val="">請選擇類別</option>
+  	<option val="eat">食</option>
+  	<option val="play">衣</option>
+  	<option val="live">住</option>
+  <option val="trans">行</option>
+  	<option val="teach">育</option>
+  	<option val="play">樂</option>
+  	<option val="other">其他</option>
+
+  </select>
+  <label for="Project">項目:</label>
+  <input type="text" class="form-control" id="Project">
+  <label for="Money">金額:</label>
+  <input type="text" class="form-control" id="Money">
+  <button class="btn btn-primary" id="submit">送出</button>
+</div>
+<script type="text/javascript" src="js/accounting.js"></script>
+</body>
+</html>

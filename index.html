@@ -1,19 +1,54 @@
-<!DOCTYPE html>
+
+
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <!DOCTYPE html>
 <html>
+
 <head>
+
+	
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<center><img src="https://s-media-cache-ak0.pinimg.com/736x/04/79/50/04795066625f35988d7db32f6bafb834--accounting-firms-company-logo.jpg" alt="logo" ></center>
+	<center><img src="css/logo.jpg" alt="logo" style="width:304px;height:228px; " ></center>
 	<title>My accounting</title>
 </head>
 <body>
 <center><h1>My Accounting</h1></center>
 
-<center><button type="button" class="btn btn-primary btn-lg" >記帳</button><br></center>
-<center><button type="button" class="btn btn-primary btn-lg">近10筆支出</button><br></center>
-<center><button type="button" class="btn btn-primary btn-lg">過往支出查詢</button><br></center>
+<center><button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='accounting.html'" >記帳</button><br></center>
+<center><button type="button" class="btn btn-primary btn-lg"onclick="window.location.href='recent10.html'">近10筆支出</button><br></center>
+<center><button type="button" class="btn btn-primary btn-lg"onclick="window.location.href='lookup.html'">過往支出查詢</button><br></center>
+
+<div id="mySidenav" class="sidenav">
+  <a href="https://www.youtube.com/watch?v=bg6g60Y3IDY" id="about">HogRiders</a>
+  <a href="https://www.youtube.com/watch?v=w0AOGeqOnFY" id="blog">Coconutsong</a>
+  <a href="https://translate.google.com.tw/?hl=zh-TW&authuser=0#zh-CN/en/%E9%A1%9E%E5%88%A5%0A%E9%87%91%E9%A1%8D%0A%E6%AF%94%E4%BE%8B" id="projects">Translate</a>
+  <a href="file:///C:/Users/Wang/Desktop/joshuawang427.github.io-master/db.html" id="contact">DB</a>
+</div>
 
 </body>
 
 
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+</body>
 </html>
+
